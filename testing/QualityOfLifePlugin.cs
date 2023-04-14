@@ -81,7 +81,6 @@ public class ActionSpeedPlugin : BaseUnityPlugin {
 		}
 	}
 
-	/*
 	[HarmonyPatch(typeof(KillByDamageDealingObjTracker), "WhatKilledItCheck")]
 	class HarmonyPatch_KillByDamageDealingObjTracker_WhatKilledItCheck {
 
@@ -106,7 +105,6 @@ public class ActionSpeedPlugin : BaseUnityPlugin {
 			return true;
 		}
 	}
-	*/
 
 	[HarmonyPatch(typeof(HealthHandler), "HealthChange")]
 	class HarmonyPatch_HealthHandler_HealthChange {
