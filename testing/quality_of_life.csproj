@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95872C88-DF15-43D1-A84D-457768332399}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>devopsdinosaur.bounty_of_one.quality_of_life</RootNamespace>
+    <AssemblyName>devopsdinosaur.bounty_of_one.quality_of_life</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="QualityOfLifePlugin.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_Audio">
+      <HintPath>..\libs\8umpty_Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_Event">
+      <HintPath>..\libs\8umpty_Event.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_GameObj">
+      <HintPath>..\libs\8umpty_GameObj.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_GetVar">
+      <HintPath>..\libs\8umpty_GetVar.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_GoogleSheet">
+      <HintPath>..\libs\8umpty_GoogleSheet.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_Input">
+      <HintPath>..\libs\8umpty_Input.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_Misc">
+      <HintPath>..\libs\8umpty_Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_Movement">
+      <HintPath>..\libs\8umpty_Movement.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_Optimization">
+      <HintPath>..\libs\8umpty_Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_Physic">
+      <HintPath>..\libs\8umpty_Physic.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_Steam">
+      <HintPath>..\libs\8umpty_Steam.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_UserfulAtoms">
+      <HintPath>..\libs\8umpty_UserfulAtoms.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_VariableManipulation">
+      <HintPath>..\libs\8umpty_VariableManipulation.dll</HintPath>
+    </Reference>
+    <Reference Include="8umpty_WebDatabase">
+      <HintPath>..\libs\8umpty_WebDatabase.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx, Version=5.4.21.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Harmony, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\BepInEx.Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Preloader, Version=5.4.21.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\BepInEx.Preloader.dll</HintPath>
+    </Reference>
+    <Reference Include="BOO_Database">
+      <HintPath>..\libs\BOO_Database.dll</HintPath>
+    </Reference>
+    <Reference Include="BOO_IndependantScripts">
+      <HintPath>..\libs\BOO_IndependantScripts.dll</HintPath>
+    </Reference>
+    <Reference Include="BOO_IntricatedSystems">
+      <HintPath>..\libs\BOO_IntricatedSystems.dll</HintPath>
+    </Reference>
+    <Reference Include="BOO_LootHandling">
+      <HintPath>..\libs\BOO_LootHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="BOO_Objects">
+      <HintPath>..\libs\BOO_Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="BOO_PlayerAndEnemiesBehaviour">
+      <HintPath>..\libs\BOO_PlayerAndEnemiesBehaviour.dll</HintPath>
+    </Reference>
+    <Reference Include="BOO_UI">
+      <HintPath>..\libs\BOO_UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityAtoms.UnityAtomsBaseAtoms.Runtime">
+      <HintPath>..\libs\UnityAtoms.UnityAtomsBaseAtoms.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityAtoms.UnityAtomsCore.Runtime">
+      <HintPath>..\libs\UnityAtoms.UnityAtomsCore.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityAtoms.UnityAtomsFSM.Runtime">
+      <HintPath>..\libs\UnityAtoms.UnityAtomsFSM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityAtoms.UnityAtomsMonoHooks.Runtime">
+      <HintPath>..\libs\UnityAtoms.UnityAtomsMonoHooks.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /y $(TargetPath) "%25BOUNTYOFONE_HOME%25\BepInEx\plugins\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
